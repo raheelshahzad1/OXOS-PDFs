@@ -78,6 +78,10 @@
     margin-bottom: 20px;
 }
 
+.mb-0 {
+    margin-bottom: 0;
+}
+
 .py-1 {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -281,6 +285,7 @@ ol li {
     counter-reset: num-counter 0;
     /* Reset the number counter to start from 3 */
 }
+
 
 
 .dot-list {
@@ -880,13 +885,13 @@ table.attenuation-table tfoot .note {
 }
 
 /*----------------
-    Page 57 Start
+    Page 58 Start
 -----------------*/
 .compliance-table {
     border-collapse: collapse;
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
     font-size: 14px;
     text-align: left;
     border: 1px solid #000;
@@ -900,7 +905,6 @@ table.attenuation-table tfoot .note {
 }
 
 .compliance-table thead {
-    background-color: #f2f2f2;
     font-weight: bold;
 }
 
@@ -908,19 +912,173 @@ table.attenuation-table tfoot .note {
     text-align: left;
     font-size: 13px;
     padding: 15px;
-    background-color: #f9f9f9;
 }
 
 .compliance-table .footnotes p {
     margin: 5px 0;
 }
 
-.compliance-table del {
-    color: red;
+
+/*----------------
+    Page 59 Start
+-----------------*/
+.stray-radiation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    border: 1px solid #000;
+    text-align: left;
 }
 
-.compliance-table ins {
-    color: green;
-    text-decoration: none;
+.stray-radiation-table th,
+.stray-radiation-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.stray-radiation-table thead th {
+    text-align: center;
+    font-size: 16px;
     font-weight: bold;
+
+}
+
+/*----------------
+    Page 60 Start
+-----------------*/
+.lettered-list-b {
+    list-style-type: lower-alpha;
+    counter-reset: list-b 1;
+    padding-left: 1.5em;
+}
+
+.lettered-list-b>li {
+    counter-increment: list-b;
+}
+
+.lettered-list-b>li::before {
+    content: counter(list-b, lower-alpha) ") ";
+    position: absolute;
+    margin-left: -1.5em;
+}
+
+/*----------------
+    Page 61 Start
+-----------------*/
+.beam-horizontal img {
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/*----------------
+    Page 63 Start
+-----------------*/
+.marking-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    border: 1px solid #000;
+    text-align: left;
+}
+
+.marking-table th,
+.marking-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.marking-table thead th {
+    font-weight: bold;
+}
+
+.temperature-protection-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    border: 1px solid #000;
+    text-align: left;
+}
+
+.temperature-protection-table th,
+.temperature-protection-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.temperature-protection-table thead th {
+    font-weight: bold;
+}
+
+/*----------------
+    Page 68 Start
+-----------------*/
+.reference-list {
+    counter-reset: ref;
+    list-style: none;
+    padding-left: 0;
+}
+
+.reference-list li::before {
+    counter-increment: ref;
+    content: "[" counter(ref) "] ";
+    position: absolute;
+    left: 0;
+}
+
+.reference-list li {
+    padding-left: 2.5rem;
+}
+
+.withdrawn-list {
+    counter-reset: withdrawn 1;
+    /* Start at 1 so first item is 2 */
+    list-style: none;
+    padding-left: 0;
+}
+
+.withdrawn-list li::before {
+    counter-increment: withdrawn;
+    content: counter(withdrawn) " ";
+    position: absolute;
+    left: 0;
+}
+
+.withdrawn-list li {
+    padding-left: 1.5rem;
+}
+
+
+/*----------------
+    Page 69 Start
+-----------------*/
+/* Table of Contents Styles */
+.index-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.index-item .title {
+    font-weight: 500;
+    flex-shrink: 0;
+}
+
+.index-item .dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted #1f2937;
+    margin-bottom: 4px;
+}
+
+.index-item .description {
+    text-align: right;
+    white-space: nowrap;
+    font-size: 1rem;
+    flex-shrink: 0;
 }
