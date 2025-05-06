@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEC 60601-2-54</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <!--Page-4-->
+    <div class="page">
+        <div>
+            <p class="text-center">International Electrotechnical Commission</p>
+            <p class="text-center font-bold">Medical Electrical Equipment –</p>
+
+            <p class="text-center font-bold">Part 2-54: Particular requirements for the basic safety and essential
+                performance of X-ray equipment for radiography and radioscopy</p>
+            <p class="text-center">FOREWORD</p>
+        </div>
+
+        <ol class="num-counter">
+            <li>
+                The International Electrotechnical Commission (IEC) is a worldwide organization for standardization
+                comprising all national electrotechnical committees (IEC National Committees). The object of IEC is to
+                promote international co-operation on all questions concerning standardization in the electrical and
+                electronic fields. To this end and in addition to other activities, IEC publishes International
+                Standards, Technical Specifications, Technical Reports, Publicly Available Specifications (PAS) and
+                Guides (hereafter referred to as “IEC Publication(s)”). Their preparation is entrusted to technical
+                committees; any IEC National Committee interested in the subject dealt with may participate in this
+                preparatory work. International, governmental and non-governmental organizations liaising with the IEC
+                also participate in this preparation. IEC collaborates closely with the International Organization for
+                Standardization (ISO) in accordance with conditions determined by agreement between the two
+                organizations.
+            </li>
+
+            <li>
+                The formal decisions or agreements of IEC on technical matters express, as nearly as possible, an
+                international consensus of opinion on the relevant subjects since each technical committee has
+                representation from all interested IEC National Committees.
+            </li>
+
+            <li>
+                IEC Publications have the form of recommendations for international use and are accepted by IEC National
+                Committees in that sense. While all reasonable efforts are made to ensure that the technical content of
+                IEC Publications is accurate, IEC cannot be held responsible for the way in which they are used or for
+                any misinterpretation by any end user.
+            </li>
+
+            <li>
+                In order to promote international uniformity, IEC National Committees undertake to apply IEC
+                Publications transparently to the maximum extent possible in their national and regional publications.
+                Any divergence between any IEC Publication and the corresponding national or regional publication shall
+                be clearly indicated in the latter.
+            </li>
+
+            <li>
+                IEC itself does not provide any attestation of conformity. Independent certification bodies provide
+                conformity assessment services and, in some areas, access to IEC marks of conformity. IEC is not
+                responsible for any services carried out by independent certification bodies.
+            </li>
+
+            <li>
+                All users should ensure that they have the latest edition of this publication.
+            </li>
+
+            <li>
+                No liability shall attach to IEC or its directors, employees, servants or agents including individual
+                experts and members of its technical committees and IEC National Committees for any personal injury,
+                property damage or other damage of any nature whatsoever, whether direct or indirect, or for costs
+                (including legal fees) and expenses arising out of the publication, use of, or reliance upon, this IEC
+                Publication or any other IEC Publications.
+            </li>
+
+            <li>
+                Attention is drawn to the Normative references cited in this publication. Use of the referenced
+                publications is indispensable for the correct application of this publication.
+            </li>
+
+            <li>
+                Attention is drawn to the possibility that some of the elements of this IEC Publication may be the
+                subject of patent rights. IEC shall not be held responsible for identifying any or all such patent
+                rights.
+            </li>
+        </ol>
+
+        <div>
+            <p>
+                IEC 60601-2-54 has been prepared by subcommittee 62B: Diagnostic imaging equipment, of IEC technical
+                committee 62: Electrical equipment in medical practice. It is an International Standard.
+            </p>
+
+            <p>
+                This second edition cancels and replaces the first edition published in 2009, Amendment 1:2015 and
+                Amendment 2:2018. This edition constitutes a technical revision.
+            </p>
+
+            <p>
+                This edition includes editorial and technical changes to reflect the IEC 60601-1:2005/AMD2:2020. It also
+                contains corrections and technical improvements.
+                Significant technical changes with respect to the previous edition are as follows:</p>
+        </div>
+
+        <ol class="lettered-list">
+            <li>a new specific term DOSIMETER is introduced to replace the general term DOSEMETER;
+            </li>
+
+            <li>terms and definitions taken exclusively from IEC TR 60788:2004 and which are specifically applicable in
+                this document have been moved to 201.3;
+            </li>
+
+            <li>the collateral standards IEC 60601-1-11:2015, IEC 60601-1-11:2015/AMD1:2020, IEC 60601-1-12:2014 and IEC
+                60601-1-12:2014/AMD1:2020 are applicable if MANUFACTURER so declares;
+            </li>
+
+            <li>the subclause 201.11.101 “Protection against excessive temperatures of X-ray tube assemblies” has been
+                removed from this document as its requirements are sufficiently and clearly covered by IEC 60601-1:2005,
+                IEC 60601-1:2005/AMD1:2012, IEC 60601-1:2005/AMD2:2020 and IEC 60601-2-28:2017;
+            </li>
+
+            <li>to adopt changes which are introduced with respect to indicator lights in 7.8.1 of the IEC
+                60601-1:2005/AMD2:2020 clarification of requirements is provided to avoid conflicts with requirements of
+                indicator lights stipulated for X-RAY EQUIPMENT;
+            </li>
+
+            <li>
+                explanation of the term ESSENTIAL PERFORMANCE is provided in Annex AA to emphasize the
+                performance of the clinical function under NORMAL and SINGLE FAULT CONDITIONS.
+            </li>
+        </ol>
+    </div>
+
+    <!--Page-5-->
+    <div class="page">
+        <p>The text of this document is based on the following documents:</p>
+
+        <table>
+            <tr>
+                <th>Draft</th>
+                <th>Report on voting</th>
+            </tr>
+
+            <tr>
+                <td>62B/1285/FDIS</td>
+                <td>62B/1293/RVD</td>
+            </tr>
+        </table>
+
+        <div>
+            <p>Full information on the voting for its approval can be found in the report on voting indicated in
+                the above table.
+            </p>
+
+            <p>The language used for the development of this International Standard is English.</p>
+
+            <p>This document was drafted in accordance with ISO/IEC Directives, Part 2, and developed in
+                accordance with ISO/IEC Directives, Part 1 and ISO/IEC Directives, IEC Supplement, available
+                at <a href="#">www.iec.ch/members_experts/refdocs.</a> The main document types developed by IEC are
+                described in greater detail at <a href="#"> www.iec.ch/standardsdev/publications.</a>
+            </p>
+        </div>
+
+        <div>
+            <p>In this document, the following print types are used:</p>
+
+            <ul class="custom-ul">
+                <li class="custom-li">requirements and definitions: roman type;</li>
+
+                <li class="custom-li">test specifications: italic type;</li>
+
+                <li class="custom-li">informative material appearing outside of tables, such as notes, examples and
+                    references: in smaller type.
+                    Normative text of tables is also in a smaller type;
+                </li>
+
+                <li class="custom-li">TERMS DEFINED IN CLAUSE 3 OF IEC 60601-1:2005, IEC 60601-1:2005/AMD1:2012 AND IEC
+                    60601-1:2005/AMD2:2020, IN THIS DOCUMENT OR AS NOTED: SMALL CAPITALS.
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <p class="heading">In referring to the structure of this document, the term </p>
+
+            <ul class="custom-ul">
+                <li class="custom-li">“clause” means one of the seventeen numbered divisions within the table of
+                    contents,
+                    inclusive of all subdivisions (e.g. Clause 7 includes subclauses 7.1, 7.2, etc.);
+                </li>
+
+                <li class="custom-li"> “subclause” means a numbered subdivision of a clause (e.g. 7.1, 7.2 and 7.2.1 are
+                    all
+                    subclauses of Clause 7).
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <p>References to clauses within this document are preceded by the term “Clause” followed by the
+                clause number. References to subclauses within this document are by number only.</p>
+
+            <p>In this document, the conjunctive “or” is used as an “inclusive or” so a statement is true if any
+                combination of the conditions is true.
+            </p>
+
+            <p class="heading">The verbal forms used in this document conform to usage described in Clause 7 of the
+                ISO/IEC
+                Directives, Part 2. For the purposes of this document, the auxiliary verb:
+            </p>
+        </div>
+
+        <ul class="custom-ul">
+            <li class="custom-li">“shall” means that compliance with a requirement or a
+                test is mandatory for compliance with this document;
+            </li>
+
+            <li>“should” means that compliance with a requirement or a test is recommended but is not
+                mandatory for compliance with this document;
+            </li>
+
+            <li class="custom-li">“may” is used to describe a permissible way to achieve compliance
+                with a requirementortest.
+            </li>
+        </ul>
+
+        <div>
+            <p>An asterisk (*) as the first character of a title or at the beginning of a paragraph or table title
+                indicates that there is guidance or rationale related to that item in Annex AA.
+            </p>
+
+            <p>A list of all parts of the IEC 60601 and IEC 80601 series, published under the general title
+                <em>Medical electrical equipment</em>, can be found on the IEC website.
+            </p>
+
+            <p>The committee has decided that the contents of this document will remain unchanged until the
+                stability date indicated on the IEC website under <a href="https://webstore.iec.ch">webstore.iec.ch</a>
+                in
+                the data related to the
+                specific document. At this date, the document will be:
+            </p>
+        </div>
+
+        <ul class="dot-list">
+            <li>reconfirmed,</li>
+            <li>withdrawn,</li>
+            <li>replaced by a revised edition, or</li>
+            <li>amended.</li>
+        </ul>
+    </div>
+
+    <!--Page-6-->
+    <div class="page">
+        <div>
+            <p class="text-center">INTRODUCTION</p>
+
+            <p>This document has been prepared to provide, based on IEC 60601-1:2005 (third edition) and
+                its collaterals, a complete set of safety requirements for ME EQUIPMENT for RADIOGRAPHY and
+                RADIOSCOPY. The purpose of this second edition is to introduce changes to reference the second
+                amendment (2020) to IEC 60601-1:2005 and associated collateral standards. Moreover, in
+                Annex AA a clarification of the term for ESSENTIAL PERFORMANCE is provided. This document
+                addresses the system level of X-RAY EQUIPMENT, which consists of a combination of an X-RAY
+                GENERATOR, ASSOCIATED EQUIPMENT and ACCESSORIES. Component functions are addressed as
+                far as necessary.
+            </p>
+
+            <p>The minimum safety requirements specified in this document are considered to provide for a
+                practical degree of safety in the operation of ME EQUIPMENT for RADIOGRAPHY and RADIOSCOPY.
+                Requirements for additional provisions for ME EQUIPMENT for interventional applications are
+                covered by IEC 60601-2-43.
+            </p>
+        </div>
+    </div>
+
+    <!--Page-7-->
+    <div class="page">
+        <div>
+            <p class="text-center font-bold">MEDICAL ELECTRICAL EQUIPMENT –</p>
+
+            <p class="text-center font-bold">Part 2-54: Particular requirements for the basic safety and essential
+                performance of X-ray equipment for radiography and radioscopy
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.1 Scope, object and related standards</p>
+            <p>Clause 1 of IEC 60601-1:2005, IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020 applies, except
+                as
+                follows:
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.1.1 Scope</p>
+            <p>Replacement:</p>
+
+            <p>This document applies to the BASIC SAFETY and ESSENTIAL PERFORMANCE of ME EQUIPMENT and
+                ME SYSTEMS intended to be used for projection RADIOGRAPHY and INDIRECT RADIOSCOPY.
+                IEC 60601-2-43 applies to ME EQUIPMENT and ME SYSTEMS intended to be used for interventional
+                applications and refers to applicable requirements in this document.
+            </p>
+
+            <p>ME EQUIPMENT and ME SYSTEMS intended to be used for bone or tissue absorption densitometry,
+                computed tomography, mammography or dental or radiotherapy applications are excluded from
+                the scope of this document. The scope of this document also excludes radiotherapy simulators.
+            </p>
+
+            <p>If a clause or subclause is specifically intended to be applicable to ME EQUIPMENT only, or to
+                ME SYSTEMS only, the title and content of that clause or subclause will say so. If that is not the
+                case, the clause or subclause applies both to ME EQUIPMENT and to ME SYSTEMS, as relevant.
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.1.2 Object</p>
+            <p>Replacement:</p>
+
+            <p>The object of this document is to establish particular BASIC SAFETY and ESSENTIAL PERFORMANCE
+                requirements
+                for ME EQUIPMENT and ME SYSTEMS for RADIOGRAPHY and RADIOSCOPY.
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.1.3 Collateral standards</p>
+            <p>Addition:</p>
+
+            <p>This document refers to those applicable collateral standards that are listed in Clause 2 of
+                IEC 60601-1:2005, IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020 as
+                modified in 201.2.
+            </p>
+
+            <p>
+                IEC 60601-1-2:2014 and IEC 60601-1-2:2014/AMD1:2020, IEC 60601-1-3:2008 and
+                IEC 60601-1-3:2008/AMD1:2013 and IEC 60601-1-3:2008/AMD2:2021 apply, as modified in
+                Clauses 202 and 203 respectively. If the MANUFACTURER declares that the ME EQUIPMENT or ME
+                SYSTEM is intended to be operated in a HOME HEALTHCARE ENVIRONMENT, then
+                IEC 60601-1-11:2015 and IEC 60601-1-11:2015/AMD1:2020 apply and if the MANUFACTURER
+                declares that the ME EQUIPMENT or ME SYSTEM is intended to be operated in an EMERGENCY
+                MEDICAL
+                SERVICES ENVIRONMENT,
+                then
+                IEC 60601-1-12:2014
+                and
+                IEC 60601-1-12:2015/AMD1:2020 apply. IEC 60601-1-8, IEC 60601-1-9, IEC 60601-1-10 do
+                not apply. All other published collateral standards in the IEC 60601-1 series apply as published.
+            </p>
+
+            <small>NOTE 1: OPERATORS of X-RAY EQUIPMENT are used to audible signals as specified in this document rather
+                than to
+                the concepts of IEC 60601-1-8. Therefore IEC 60601-1-8 does not apply.
+            </small>
+        </div>
+    </div>
+
+    <!--Page-8-->
+    <div class="page">
+        <div>
+            <p class="font-bold">201.1.4 Particular standards</p>
+            <p>Replacement:</p>
+
+            <p>In the IEC 60601 series, particular standards may modify, replace or delete requirements contained in IEC
+                60601-1:2005, IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020 and collateral standards as
+                appropriate for the particular ME EQUIPMENT under consideration, and may add other BASIC SAFETY and
+                ESSENTIAL PERFORMANCE requirements.
+            </p>
+
+            <p>A requirement of a particular standard takes priority over IEC 60601-1:2005,
+                IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020.
+            </p>
+
+            <p>
+                The numbering of clauses and subclauses of this document corresponds to that of
+                IEC 60601-1:2005, IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020 with the
+                prefix “201” (e.g. 201.1 in this document addresses the content of Clause 1 of
+                IEC 60601-1:2005, IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020) or
+                applicable collateral standard with the prefix “20x” where x is the final digit(s) of the collateral
+                standard document number (e.g. 202.4 in this document addresses the content of Clause 4 of
+                the IEC 60601-1-2 collateral standard, 203.4 in this document addresses the content of
+                Clause 4 of the IEC 60601-1-3 collateral standard, etc.). The changes to the text of the
+                IEC 60601-1:2005, IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020 are
+                specified by the use of the following words:
+            </p>
+
+            <p>
+                “Replacement”
+                means that the clause or subclause of IEC 60601-1:2005,
+                IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020 or the applicable collateral
+                standard is replaced completely by the text of this document.
+            </p>
+
+            <p>
+                “Addition” means that the text of this document is additional to the requirements of
+                IEC 60601-1:2005, IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020 or the
+                applicable collateral standard.
+            </p>
+
+            <p>
+                “Amendment” means that the clause or subclause of IEC 60601-1:2005,
+                IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020 or the applicable collateral
+                standard is amended as indicated by the text of this document.
+            </p>
+
+            <p>
+                Subclauses, figures or tables which are additional to those of IEC 60601-1:2005,
+                IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020 are numbered starting from
+                201.101. However, due to the fact that definitions in IEC 60601-1:2005,
+                IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020 are numbered 3.1 through
+                3.154, additional definitions in this document are numbered beginning from 201.3.201.
+                Additional annexes are lettered AA, BB, etc., and additional items aa), bb), etc.
+            </p>
+
+            <p>
+                Subclauses, figures or tables which are additional to those of a collateral standard are
+                numbered starting from 20x, where “x” is the number of the collateral standard, e.g. 202 for
+                IEC 60601-1-2, 203 for IEC 60601-1-3, etc.
+            </p>
+
+            <p>Where there is no corresponding clause or subclause in this document, the clause or subclause
+                of IEC 60601-1:2005, IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020 or the
+                applicable collateral standard, although possibly not relevant, applies without modification;
+                where it is intended that any part of IEC 60601-1:2005, IEC 60601-1:2005/AMD1:2012 and IEC
+                60601-1:2005/AMD2:2020 or the applicable collateral standard, although possibly relevant, is
+                not to be applied, a statement to that effect is given in this document.
+            </p>
+        </div>
+
+
+
+        <div class="page">
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <!--Page-9-->
+    <div class="page">
+        <div>
+            <p class="font-bold">201.2 Normative references</p>
+            <p>NOTE: <small>Informative references are listed in the Bibliography.</small></p>
+
+            <p>Clause 2 of IEC 60601-1:2005, IEC 60601-1:2005/AMD1:2012 and IEC 60601-1:2005/AMD2:2020 applies, except
+                as
+                follows:
+            </p>
+
+            <div>
+                <p>Addition:</p>
+                <p>IEC 60336:2020, Medical electrical equipment – X-ray tube assemblies for medical diagnosis – Focal
+                    spot
+                    dimensions and related characteristics
+                </p>
+            </div>
+
+            <p>IEC 60580:2019, Medical electrical equipment – Dose area product meters</p>
+            <p>IEC 60601-1:2005, Medical electrical equipment – Part 1: General requirements for basic safety and
+                essential
+                performance <br>
+            <p>IEC 60601-1:2005/AMD1:2012</p>
+            <p>IEC 60601-1:2005/AMD2:2020</p>
+            </p>
+
+
+            <p>IEC TR 60788:2004, Medical electrical equipment – Glossary of defined terms</p>
+
+            <p>IEC 60806, Determination of the maximum symmetrical radiation field of X-ray tube assemblies and X-ray
+                source
+                assemblies for medical diagnosis
+            </p>
+
+            <p>IEC 61910-1:2014, Medical electrical equipment – Radiation dose documentation – Part 1: Radiation dose
+                structured reports for radiography and radioscopy</p>
+            <p>IEC 62494-1:2008, Medical electrical equipment – Exposure index of digital X-ray imaging systems – Part
+                1:
+                Definitions and requirements for general radiography
+            </p>
+
+            <div>
+                <p>Amendment:</p>
+                <p>IEC 60601-1-3:2008, Medical electrical equipment – Part 1-3: General requirements for basic safety
+                    and
+                    essential performance – Collateral standard: Radiation protection in diagnostic X-ray equipment <br>
+                <p>IEC 60601-1-3:2008/AMD1:2013</p>
+                <p>IEC 60601-1-3:2008/AMD2:2021</p>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3 Terms and definitions</p>
+
+            <p>For the purposes of this document, the terms and definitions given in IEC 60601-1:2005, IEC
+                60601-1:2005/AMD1:2012, IEC 60601-1:2005/AMD2:2020, IEC TR 60788:2004 and the following apply.
+            </p>
+
+            <p>ISO and IEC maintain terminological databases for use in standardization at the following addresses:</p>
+
+            <ul class="dot-list">
+                <li>IEC Electropedia: <a href="http://www.electropedia.org/">http://www.electropedia.org/</a></li>
+                <li>ISO Online browsing platform: <a href="http://www.iso.org/obp">http://www.iso.org/obp</a></li>
+            </ul>
+
+            <p>NOTE: An Index of defined terms is found in the last part of this document.</p>
+        </div>
+    </div>
+
+    <!--Page-10-->
+    <div class="page">
+        <p>Addition: </p>
+
+        <div>
+            <p class="font-bold">201.3.201</p>
+            <p class="font-bold">APPARENT RESISTANCE OF SUPPLY MAINS </p>
+
+            <p>for diagnostic X-RAY GENERATOR, resistance of the SUPPLY MAINS determined under specific load
+                conditions
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.202</p>
+            <p class="font-bold">AUTOMATIC INTENSITY CONTROL </p>
+
+            <p>
+                in an X-RAY GENERATOR, mode of operation in which one or more LOADING FACTORS are controlled
+                automatically in order to obtain at a pre-selected location a desired rate of a RADIATION QUANTITY
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.203</p>
+            <p class="font-bold">DIRECT RADIOGRAPHY </p>
+
+            <p>
+                RADIOGRAPHY in which the permanent recording is effected at an IMAGE RECEPTION AREA
+            </p>
+
+            <small>Example: Film-screen or film RADIOGRAPHY. </small>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.204</p>
+            <p class="font-bold">DIRECT RADIOSCOPY </p>
+
+            <p>
+                RADIOSCOPY in which the visible images are presented at the IMAGE RECEPTION AREA, or close to
+                it, in the RADIATION BEAM
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.205</p>
+            <p class="font-bold">DOSE AREA PRODUCT </p>
+
+            <p>
+                product of the area of the cross-section of an X-RAY BEAM and the averaged AIR KERMA over that
+                cross-section. The unit is the gray square metre (Gy⋅m2)
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.206</p>
+            <p class="font-bold">DOSIMETER </p>
+
+            <p>
+                EQUIPMENT which uses ionization chambers or semiconductor detectors for the measurement of
+                AIR KERMA or AIR KERMA RATE in the beam of an X-RAY EQUIPMENT used for diagnostic medical
+                RADIOLOGICAL examinations
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.207</p>
+            <p class="font-bold">ENTRANCE FIELD SIZE </p>
+
+            <p>
+                dimensions of the field in the entrance plane of an X-RAY IMAGE RECEPTOR that can be used for
+                the transmission of an X-RAY PATTERN under specific conditions
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.208</p>
+            <p class="font-bold">EXAMINATION PROTOCOL </p>
+
+            <p>
+                full set of any programmed technical factors, control functions and settings, including image
+                processing settings, designed to optimize the image acquisition and DISPLAY
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.209</p>
+            <p class="font-bold">EXAMINATION PROTOCOL SELECTION CONTROL </p>
+
+            <p>
+                control to select a PRE-PROGRAMMED EXAMINATION PROTOCOL
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2010</p>
+            <p class="font-bold">HIGH-VOLTAGE GENERATOR </p>
+
+            <p>
+                in an X-RAY GENERATOR, combination of all components for control and production of the
+                electrical energy to be supplied to an X-RAY TUBE, usually consisting of a high-voltage
+                transformer assembly and a control assembly
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2011</p>
+            <p class="font-bold">IMAGE RECEPTION PLANE </p>
+
+            <p>
+                plane containing the greatest dimensions of the IMAGE RECEPTION AREA
+            </p>
+        </div>
+    </div>
+
+    <!--Page-11-->
+    <div class="page">
+        <div>
+            <p class="font-bold">201.3.2012</p>
+            <p class="font-bold">INDIRECT RADIOGRAPHY </p>
+
+            <p>
+                RADIOGRAPHY in which the permanent recording is effected after TRANSFER of the information
+                obtained at an IMAGE RECEPTION AREA
+            </p>
+
+            <small>Examples: CR systems, digital detector systems, image intensifier systems.</small>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2013</p>
+            <p class="font-bold">INDIRECT RADIOSCOPY </p>
+
+            <p>
+                RADIOSCOPY in which the images are presented at a location outside the RADIATION BEAM after
+                TRANSFER of the information
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2014</p>
+            <p class="font-bold">INTERLOCK </p>
+
+            <p>
+                means preventing the start or the continued operation of ME EQUIPMENT unless certain
+                predetermined conditions prevail
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2015</p>
+            <p class="font-bold">ISOCENTRE</p>
+
+            <p>
+                in RADIOLOGICAL equipment with several modes of movement of the REFERENCE AXIS around a
+                common centre, centre of the smallest sphere through which the X-RAY BEAM AXIS passes
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2016</p>
+            <p class="font-bold">LAST IMAGE HOLD RADIOGRAM LIH RADIOGRAM </p>
+
+            <p>
+                single image obtained by sampling or temporal processing of one or more images from the end
+                of a radioscopic IRRADIATION
+            </p>
+
+            <small>Note 1 to entry: This note applies to the French language only. </small>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2017</p>
+            <p class="font-bold">NOMINAL ELECTRIC POWER </p>
+
+            <p>
+                for a HIGH-VOLTAGE GENERATOR, highest constant electric power which can be delivered for a
+                single X-RAY TUBE load in a specific LOADING TIME
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2018</p>
+            <p class="font-bold">NOMINAL SHORTEST IRRADIATION TIME </p>
+
+            <p>
+                shortest LOADING TIME for which a required constancy of the controlled radiation quantity is
+                maintained
+            </p>
+
+            <small>Note 1 to entry: The IRRADIATION TIME is controlled by a HIGH-VOLTAGE GENERATOR with AUTOMATIC
+                CONTROL SYSTEMS.
+            </small>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2019</p>
+            <p class="font-bold">PRE-PROGRAMMED EXAMINATION PROTOCOL </p>
+
+            <p>
+                single hardware or software setting, or both, which is associated with an EXAMINATION PROTOCOL
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2020</p>
+            <p class="font-bold">QUALITY CONTROL </p>
+
+            <p>
+                operational techniques and activities that are used to fulfil requirements for quality
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2021</p>
+            <p class="font-bold">RADIATION OUTPUT </p>
+
+            <p>
+                AIR KERMA per CURRENT TIME PRODUCT (mGy/mAs) at a given distance from the FOCAL SPOT in
+                the primary X-RAY BEAM
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2022</p>
+            <p class="font-bold">RADIOSCOPY REPLAY IMAGE SEQUENCE </p>
+
+            <p>
+                series of the most recent images of the most recent RADIOSCOPY IRRADIATION-EVENT
+            </p>
+        </div>
+    </div>
+
+    <!--Page-12-->
+    <div class="page">
+        <div>
+            <p class="font-bold">201.3.2023</p>
+            <p class="font-bold">REGION OF INTEREST </p>
+
+            <p>
+                localized part of an image, which is of particular interest at a given time
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2024</p>
+            <p class="font-bold">SERIAL RADIOGRAPHY </p>
+
+            <p>
+                RADIOGRAPHY in which the information is obtained and recorded in a regular or irregular series
+                of LOADINGS with equal or unequal LOADING FACTORS
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2025</p>
+            <p class="font-bold">SIX-PEAK HIGH-VOLTAGE GENERATOR </p>
+
+            <p>
+                HIGH-VOLTAGE GENERATOR for operation on a three-phase supply that delivers a rectified output
+                voltage with six peaks during each cycle of the supply
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2026</p>
+            <p class="font-bold">TIMING DEVICE </p>
+
+            <p>
+                device integrating and/or presenting time elapsed during an equipment function and optionally
+                changing the state of operation at the end of a predetermined time interval
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2027</p>
+            <p class="font-bold">TWELVE-PEAK HIGH-VOLTAGE GENERATOR </p>
+
+            <p>
+                HIGH-VOLTAGE GENERATOR for operation on a three-phase supply that delivers a rectified output
+                voltage with twelve peaks during each cycle of the supply
+            </p>
+        </div>
+
+        <div>
+            <p class="font-bold">201.3.2028</p>
+            <p class="font-bold">X-RAY BEAM AXIS </p>
+
+            <p>
+                for a symmetrical RADIATION BEAM, line through the centre of the RADIATION SOURCE and half way
+                between the effective edges of the BEAM LIMITING DEVICE
+            </p>
+
+            <small>Note 1 to entry: Usually, the X-RAY BEAM AXIS coincides within required tolerances with the REFERENCE
+                AXIS of the
+                RADIATION SOURCE.
+            </small>
+        </div>
+    </div>
+</body>
+
+</html>

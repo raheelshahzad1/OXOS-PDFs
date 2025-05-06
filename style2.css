@@ -1,0 +1,18 @@
+/*----------------
+    Page 4 Start
+-----------------*/
+table {
+    border-collapse: collapse;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  th, td {
+    padding: 5px 10px;
+    text-align: center;
+  }
