@@ -1082,3 +1082,306 @@ table.attenuation-table tfoot .note {
     font-size: 1rem;
     flex-shrink: 0;
 }
+
+/*----------------
+    Page 85 Start
+-----------------*/
+.requirement-table {
+    width: 70%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border: 1px solid #000;
+    margin: 20px auto;
+}
+
+.requirement-table th,
+.requirement-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.requirement-table thead th {
+    font-weight: bold;
+}
+
+/*----------------
+  Page 104 Start
+-----------------*/
+
+.constancy img {
+    max-width: 300px;
+}
+
+.repro-linearity-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border: 1px solid #000;
+    margin: 20px 0;
+}
+
+.repro-linearity-table caption {
+    caption-side: top;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.repro-linearity-table th,
+.repro-linearity-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.repro-linearity-table thead th {
+    font-weight: bold;
+}
+
+.repro-linearity-table tbody tr:first-child td:first-of-type,
+.repro-linearity-table tbody tr:nth-child(2) td:first-of-type,
+.repro-linearity-table tbody tr:nth-child(3) td:first-of-type,
+.repro-linearity-table tbody tr:last-of-type td {
+    text-align: left !important;
+}
+
+.phantom-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+.phantom-table th,
+.phantom-table td {
+    border: 1px solid #000;
+    padding: 8px 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.phantom-table thead th {
+    font-weight: bold;
+}
+
+.phantom-table td[colspan="2"] {
+    text-align: left;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.phantom-table td p {
+    margin: 5px 0;
+}
+
+/*----------------
+  Page 105 Start
+-----------------*/
+.aluminium-table {
+    width: 70%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border: 1px solid #000;
+    margin: 20px auto;
+}
+
+.aluminium-table th,
+.aluminium-table td {
+    border: 1px solid #000;
+    padding: 8px 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.aluminium-table thead th {
+    font-weight: bold;
+}
+
+.aluminium-table .note {
+    text-align: left;
+    font-size: 13px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/*----------------
+  Page 113 Start
+-----------------*/
+.zone-extra img {
+    max-width: 600px;
+}
+
+/*----------------
+  Page 115 Start
+-----------------*/
+.xray-field img {
+    max-width: 700px;
+}
+
+/*----------------
+  Page 116 Start
+-----------------*/
+.visual-indication-1 img {
+    max-width: 600px;
+}
+
+/*----------------
+  Page 119 Start
+-----------------*/
+.attenuation-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+.attenuation-table th,
+.attenuation-table td {
+    border: 1px solid #000;
+    padding: 8px 10px;
+    vertical-align: top;
+}
+
+.attenuation-table thead th {
+    font-weight: bold;
+    text-align: center;
+}
+
+.attenuation-table .note {
+    font-size: 13px;
+    padding: 10px;
+    line-height: 1.4;
+}
+
+/*----------------
+  Page 120 Start
+-----------------*/
+.application-specs-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 25px 0;
+    border: 1px solid black;
+}
+
+.application-specs-table thead tr {
+    text-align: left;
+}
+
+.application-specs-table th,
+.application-specs-table td {
+    border: 1px solid #000;
+    padding: 12px 15px;
+}
+
+.application-specs-table tr td:nth-child(2) {
+    text-align: center;
+}
+
+/*----------------
+  Page 121 Start
+-----------------*/
+.protection-compliance-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 25px 0;
+    border: 1px solid #ccc;
+}
+
+.protection-compliance-table th,
+.protection-compliance-table td {
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.protection-compliance-table tfoot td {
+    font-size: 14px;
+    padding-top: 8px;
+    text-align: left;
+}
+
+/*----------------
+  Page 122 Start
+-----------------*/
+.occupancy-zone-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 25px 0;
+    border: 1px solid black;
+}
+
+.occupancy-zone-table th,
+.occupancy-zone-table td {
+    border: 1px solid #000;
+    padding: 10px 12px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.source-assembly img {
+    max-width: 600px;
+}
+
+/*----------------
+  Page 124 Start
+-----------------*/
+.marking-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 25px 0;
+    border: 1px solid #000;
+}
+
+.marking-table th,
+.marking-table td {
+    border: 1px solid #000;
+    padding: 10px 12px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.marking-table tr td:first-child {
+    text-align: left;
+}
+
+/*----------------
+  Page 125 Start
+-----------------*/
+.subclause-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 25px 0;
+    border: 1px solid #000;
+}
+
+.subclause-table th,
+.subclause-table td {
+    border: 1px solid #000;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.subclause-table th {
+    text-align: center;
+}
+
+.subclause-table tr td:nth-child(2) {
+    text-align: center;
+}
